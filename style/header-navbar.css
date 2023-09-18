@@ -3,9 +3,9 @@
   padding: 1.5rem 2.4rem;
   height: 7.5rem;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  position: relative;
 }
 
 .header__logo-image {
@@ -13,18 +13,73 @@
   height: 2rem;
 }
 
-.header__menu {
-  width: 100%;
+.header__menu-icon {
+  width: 2rem;
+  height: 2rem;
+  background: transparent;
+  border: none;
   display: flex;
+  justify-content: space-around;
+  flex-flow: column nowrap;
+  position: absolute;
+  top: 2.7rem;
+  right: 3.4rem;
+  z-index: 20;
+}
+
+.line {
+  width: 2rem;
+  height: 0.25rem;
+  border-radius: 10px;
+  transform-origin: 1px;
+  transition: all 0.3s linear;
+  background-color: var(--black);
+}
+
+.line-open {
+  background-color: var(--white);
+}
+
+.line-open:nth-child(1) {
+  transform: rotate(49deg);
+}
+
+.line-open:nth-child(2) {
+  opacity: 0;
+}
+
+.line-open:nth-child(3) {
+  transform: rotate(-49deg);
+}
+
+.header__menu {
   list-style: none;
-  gap: 1rem;
+  display: none;
+  width: auto;
+  height: auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 10%;
+  background-color: var(--black);
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-align: center;
+  padding-top: 8rem;
+  z-index: 15;
+}
+
+.header__menu-open {
+  display: flex;
 }
 
 .header__menu-link {
   text-decoration: none;
-  font-size: var(--mobile-navbar-link-size);
+  font-size: var(--text-size-1);
   font-weight: var(--link-weight);
-  color: var(--black);
+  color: var(--white);
 }
 
 @media screen and (min-width: 760px){
@@ -40,20 +95,12 @@
     height: 2.4rem;
   }
 
-  .header__menu {
-    width: auto;
-    gap: 2rem;
-    align-items: center;
+  .header__menu-icon {
+    top: 4.8rem;
   }
 
-  .header__menu li:last-child .header__menu-link {
-    width: auto;
-    padding: 2rem 3.2rem;
-    background-color: var(--black);
-    color: var(--white);
-    border-radius: 2rem;
-    text-align: center;
-    display: inline-block;
+  .header__menu {
+    top: 2.2rem;
   }
 }
 
@@ -64,14 +111,30 @@
   }
 
   .header__menu {
+    position: static;
+    display: flex;
+    padding: 0;
+    flex-direction: row;
+    background: transparent;
     gap: 4.8rem;
+  }
+  
+  .header__menu-icon {
+    display: none;
   }
 
   .header__menu-link {
     font-size: var(--text-size-1);
+    color: var(--black);
   }
 
   .header__menu li:last-child .header__menu-link {
     padding: 1.7rem 4.5rem;
+    width: auto;
+    background-color: var(--black);
+    color: var(--white);
+    border-radius: 2rem;
+    text-align: center;
+    display: inline-block;
   }
 }
