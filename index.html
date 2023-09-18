@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="./style/education.css">
   <link rel="stylesheet" href="./style/community.css">
   <link rel="stylesheet" href="./style/footer.css">
+  <link rel="stylesheet" href="./style/modal.css">
   <title>Document</title>
 </head>
 <body id="home-page">
@@ -24,6 +25,13 @@
               class="header__logo-image"  
             >
           </a>
+          <div>
+            <button class="header__menu-icon">
+              <div class="line"></div>
+              <div class="line"></div>
+              <div class="line"></div>
+            </button>
+          </div>
           <ul class="header__menu">
             <li><a href="#stay-connected" class="header__menu-link">Stay Connected</a></li>
             <li><a href="#education" class="header__menu-link">Education</a></li>
@@ -153,6 +161,24 @@
           <button class="community__button" type="submit">Subscribe</button>
         </form>
       </div>
+      <div id="success-modal" class="modal">
+        <div class="modal__box">
+          <button class="modal__close-button success-modal__close-button" type="button">
+            <img src="./assets/close.svg" alt="Close Icon" class="modal__close-icon">
+          </button>
+          <img src="./assets/check-circle.svg" alt="Check Icon" class="modal__check-image">
+          <h2 class="sub-title">Email successfully registered!</h2>
+        </div>
+      </div>
+      <div id="error-modal" class="modal">
+        <div class="modal__box">
+          <button class="modal__close-button error-modal__close-button" type="button">
+            <img src="./assets/close.svg" alt="Close Icon" class="modal__close-icon">
+          </button>
+          <img src="./assets/exclamation-circle.svg" alt="Exclamation Icon" class="modal__check-image">
+          <h2 class="sub-title">Invalid Email!</h2>
+        </div>
+      </div>
     </section>
   </main>
   <footer>
@@ -171,5 +197,7 @@
       <a href="#" class="footer__link">Terms & Agreements</a>
     </nav>
   </footer>
+  <script src="./script/mobile-menu.js"></script>
+  <script src="./script/submit-email.js"></script>
 </body>
 </html>
