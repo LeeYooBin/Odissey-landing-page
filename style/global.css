@@ -5,7 +5,9 @@
   --text-color: #171E27;
   --white: #FFFFFF;
   --black: #020305;
+  --black-2: #2f333e;
   --blue: #A9C2CB;
+  --red: #FE4A49;
 
   --title-size: 3.5rem;
   --sub-title-size: 1.8rem;
@@ -17,6 +19,7 @@
   --title-weight: 800;
   --sub-title-weight: 600;
   --link-weight: 600;
+  --button-weight: 700;
   --text-weight: 500;
 
   --box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);

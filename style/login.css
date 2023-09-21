@@ -1,0 +1,188 @@
+#login {
+  width: 100%;
+  height: 100vh;
+  padding: 10rem 2.4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login__form-wrapper {
+  width: 100%;
+  height: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.4rem;
+}
+
+.login__back-icon {
+  position: absolute;
+  left: 0;
+  top: -7rem;
+  width: 3rem;
+  height: 3rem;
+}
+
+.login__form {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.login__button-bar {
+  padding: 1rem 1.2rem;
+  margin-bottom: 2.4rem;
+  width: 100%;
+  display: flex;
+  background: var(--black-2);
+  border-radius: 3.3rem;
+  box-shadow: var(--box-shadow);
+}
+
+.login__button {
+  flex: 1;
+  padding: 1.2rem 0;
+  background: var(--black-2);
+  color: var(--white);
+  border: none;
+  border-radius: 3.3rem;
+  cursor: pointer;
+  font-size: var(--sub-title-size);
+  font-weight: var(--text-weight);
+}
+
+.login__button-active {
+  background: var(--black);
+}
+
+.login__input {
+  width: 100%;
+  padding: 1.5rem 2rem;
+  outline: none;
+  border: 0.1rem solid var(--black);
+  border-radius: 3.3rem;
+  font-size: var(--text-size-1);
+}
+
+.login__label {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.2rem;
+  font-size: var(--text-size-1);
+  font-weight: var(--title-weight);
+}
+
+.login__none {
+  display: none;
+}
+
+.show-password-button {
+  background: transparent;
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  position: absolute;
+  right: 2rem;
+  top: 4.8rem;
+  cursor: pointer;
+}
+
+.show-password-icon {
+  width: 2rem;
+  height: 2rem;
+}
+
+#password-input {
+  padding-right: 4.5rem;
+}
+
+.login__submit-button {
+  padding: 1.2rem 8rem;
+  margin-top: 2rem;
+  background: var(--black);
+  color: var(--white);
+  font-size: var(--sub-title-size);
+  font-weight: var(--text-weight);
+  border: none;
+  border-radius: 3.3rem;
+  cursor: pointer;
+}
+
+.login__error-message {
+  font-size: var(--text-size-2);
+  font-weight: var(--text-weight);
+  color: var(--red);
+  position: absolute;
+  left: 2rem;
+  top: calc(100% + .5rem);
+  display: none;
+}
+
+.show-error-message {
+  display: block;
+}
+
+.login__banner {
+  background-image: url(../assets/midia-remixada-da-montanha-do-ceu-estrelado-da-natureza-da-galaxia.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 4rem;
+  width: 100%;
+  height: 100%;
+  display: none;
+  padding: 2rem;
+}
+
+.login__logo-image {
+  width: 15rem;
+}
+
+@media screen and (min-width: 760px) {
+  #login {
+    padding: 10rem 4rem;
+  }
+
+  .login__submit-button {
+    width: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 920px) {
+  #login {
+    padding: 2.5rem 8rem 2.5rem 2.5rem;
+    flex-direction: row;
+    gap: 8rem;
+  }
+
+  .login__banner {
+    display: block;
+  }
+
+  .login__form-wrapper {
+    width: 45%;
+  }
+
+  .login__submit-button {
+    width: 100%;
+  }
+
+  .login__back-icon {
+    left: 0;
+    top: -2rem;
+  }
+}
