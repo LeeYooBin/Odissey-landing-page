@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+:root {
+  --title-color: #0D0F12;
+  --text-color: #171E27;
+  --white: #FFFFFF;
+  --black: #020305;
+  --black-2: #2f333e;
+  --blue: #A9C2CB;
+  --red: #FE4A49;
+
+  --title-size: 3.5rem;
+  --sub-title-size: 1.8rem;
+  --mobile-navbar-link-size: 1.15rem;
+  --button-text-size: 2rem;
+  --text-size-1: 1.6rem;
+  --text-size-2: 1.4rem;
+
+  --title-weight: 800;
+  --sub-title-weight: 600;
+  --link-weight: 600;
+  --button-weight: 700;
+  --text-weight: 500;
+
+  --box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.no-overflow {
+  overflow: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 1rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--black);
+  border-radius: .6rem;
+}

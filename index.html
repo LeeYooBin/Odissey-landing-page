@@ -1,10 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style/global.css">
+  <link rel="stylesheet" href="./style/header.css">
+  <link rel="stylesheet" href="./style/header-navbar.css">
+  <link rel="stylesheet" href="./style/header-hero.css">
+  <link rel="stylesheet" href="./style/title.css">
+  <link rel="stylesheet" href="./style/stay-conneted.css">
+  <link rel="stylesheet" href="./style/education.css">
+  <link rel="stylesheet" href="./style/community.css">
+  <link rel="stylesheet" href="./style/footer.css">
+  <link rel="stylesheet" href="./style/modal.css">
+  <title>Home</title>
 </head>
-<body>
+<body id="home-page">
+  <header class="header">
+      <nav class="header__navbar">
+          <a href="/">
+            <img 
+              src="./assets/Odyssey.svg" 
+              alt="Odyssey Logo"
+              class="header__logo-image"  
+            >
+          </a>
+          <div>
+            <button class="header__menu-icon">
+              <div class="line"></div>
+              <div class="line"></div>
+              <div class="line"></div>
+            </button>
+          </div>
+          <ul class="header__menu">
+            <li><a href="#stay-connected" class="header__menu-link">Stay Connected</a></li>
+            <li><a href="#education" class="header__menu-link">Education</a></li>
+            <li><a href="#community" class="header__menu-link">Community</a></li>
+            <li><a href="/preview.html" class="header__menu-link">Preview</a></li>
+            <li><a href="/login.html" class="header__menu-link">Sign in</a></li>
+          </ul>
+      </nav>
+      <div class="header__banner">
+        <h2 class="title header__title">Unveiling the Wonders of the Universe</h2>
+      </div>
+      <div class="header__image-wrapper">
+        <img src="./assets/header__image.png" alt="Header Image" class="header__image">
+        <div class="header__card header__card-1">
+          <h3 class="sub-title header__sub-title">
+            <img src="./assets/heart.svg" alt="Heart Icon"> 
+            Exercising
+          </h3>
+          <img src="./assets/heartbeat.svg" alt="Heartbeat" class="header__card-image">
+        </div>
+        <div class="header__card header__card-2">
+          <h3 class="sub-title header__sub-title">
+            <img src="./assets/graph.svg" alt="Graph Icon"> 
+            Spacewalks
+          </h3>
+          <div class="header__card-img-wrapper">
+            <img src="./assets/line-char.svg" alt="Heartbeat" class="header__card-image">
+            <img src="./assets/bar-chart.svg" alt="Heartbeat" class="header__card-image">
+          </div>
+        </div>
+        <div class="header__card header__card-3">
+          <h3 class="sub-title header__sub-title header__card-3-sub-title">
+            <img src="./assets/timer.svg" alt="Timer Icon"> 
+            Total time in space
+          </h3>
+          <p class="header__card-timer">352D 5H 49M 20S</p>
+        </div>
+      </div>
+      <div class="header__text-wrapper">
+          <p class="header__text">
+            At odyssey, our mission is to inspire, educate, and ignite your passion for the cosmos. 
+            We are your premier destination for all things related to space exploration, astronomy, 
+            and the mysteries of the universe. Whether you're a seasoned astronomer or a curious novice, 
+            join us on a journey to the furthest reaches of the cosmos.
+          </p>
+          <div class="header__link-wrapper">
+            <a href="#" class="header__link">Get Started</a>
+            <a href="#" class="header__link header__link-2">
+              Watch Video
+              <img src="./assets/play.svg" alt="Play Icon">
+            </a>
+          </div>
+      </div>
+  </header>
+  <main>
+    <section id="stay-connected">
+        <div class="stay-connected__logo-wrapper">
+            <img src="./assets/spacex.png" alt="SpaceX Logo">
+            <img src="./assets/boeing.png" alt="Boeing Logo">
+            <img src="./assets/nasa.png" alt="Nasa Logo">
+            <img src="./assets/astroscale.png" alt="Astroscale Logo">
+        </div>
+        <div class="stay-connected__lower-wrapper">
+            <h2 class="title stay-connected-title">Join our vibrant community of space enthusiasts where you can</h2>
+            <div class="stay-connected__card-wrapper">
+                <div class="stay-connected__card">
+                    <div class="stay-connected__atom-wrapper">
+                      <img src="./assets/atom.svg" alt="Atom Icon">
+                    </div>
+                    <h3 class="sub-title stay-connected__sub-title">Astronomy 101</h3>
+                    <p class="stay-connected__text">Dive into the basics of astronomy. Learn about stars, planets, galaxies, 
+                    and the tools astronomers use to explore the universe.</p>
+                </div>
+                <div class="stay-connected__card">
+                    <img src="./assets/discover.svg" alt="Discover Icon">
+                    <h3 class="sub-title stay-connected__sub-title">Latest Discoveries</h3>
+                    <p class="stay-connected__text">Stay up-to-date with the most recent breakthroughs and discoveries in the 
+                    field of astrophysics and space exploration.</p>
+                </div>
+                <div class="stay-connected__card">
+                    <img src="./assets/exploration.svg" alt="Exploration Icon">
+                    <h3 class="sub-title stay-connected__sub-title">Space Exploration</h3>
+                    <p class="stay-connected__text">Explore the latest missions, both past and present, from NASA, ESA, 
+                    SpaceX, and other space agencies and organizations.</p>
+                </div>
+                <div class="stay-connected__card">
+                    <img src="./assets/technology.svg" alt="Technology Icon">
+                    <h3 class="sub-title stay-connected__sub-title">Space Technology</h3>
+                    <p class="stay-connected__text">Delve into the cutting-edge technology powering space exploration, 
+                    from spacecraft and telescopes to propulsion systems.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="education">
+        <div class="education__banner">
+          <h2 class="title education__title">We are committed to making space science accessible to all. Explore our educational resources, including</h2>
+        </div>
+        <div class="education__card-wrapper">
+            <div class="education__card">
+                <h3 class="education__card-number">01.</h3>
+                <h4 class="education__card-title">Online free courses and tutorials</h4>
+                <p class="education__card-text">Dive into the basics of astronomy. Learn about stars, planets, 
+                galaxies, and the tools astronomers use to explore the universe.</p>
+            </div>
+            <div class="education__card">
+                <h3 class="education__card-number">02.</h3>
+                <h4 class="education__card-title">Resources for teachers and educators</h4>
+                <p class="education__card-text">Delve into the cutting-edge technology powering space exploration, 
+                from spacecraft and telescopes to propulsion systems and space habitats.</p>
+            </div>
+            <div class="education__card">
+                <h3 class="education__card-number">03.</h3>
+                <h4 class="education__card-title">Book recommendations and reviews</h4>
+                <p class="education__card-text">Dive into the basics of astronomy. Learn about stars, planets, galaxies, 
+                and the tools astronomers use to explore the universe.</p>
+            </div>
+        </div>
+    </section>
+    <section id="community">
+      <div class="community__banner">
+        <h2 class="title community__title">Join our community</h2>
+        <p class="community__text">of stargazers, explorers, and cosmic enthusiasts as we embark on a 
+        journey through the cosmos like never before.</p>
+        <form action="" class="community__form">
+          <input class="community__input" type="email" placeholder="Enter your email">
+          <button class="community__button" type="submit">Subscribe</button>
+        </form>
+      </div>
+      <div id="success-modal" class="modal">
+        <div class="modal__box">
+          <button class="modal__close-button success-modal__close-button" type="button">
+            <img src="./assets/close.svg" alt="Close Icon" class="modal__close-icon">
+          </button>
+          <img src="./assets/check-circle.svg" alt="Check Icon" class="modal__check-image">
+          <h2 class="sub-title">Email successfully registered!</h2>
+        </div>
+      </div>
+      <div id="error-modal" class="modal">
+        <div class="modal__box">
+          <button class="modal__close-button error-modal__close-button" type="button">
+            <img src="./assets/close.svg" alt="Close Icon" class="modal__close-icon">
+          </button>
+          <img src="./assets/exclamation-circle.svg" alt="Exclamation Icon" class="modal__check-image">
+          <h2 class="sub-title">Invalid Email!</h2>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <a href="/"><img src="./assets/Odyssey.svg" alt="Odyssey Logo" class="footer__logo-image"></a>
+    <div>
+      <ul class="footer__menu">
+        <li><a href="#stay-connected" class="footer__menu-link">Stay Connected</a></li>
+        <li><a href="#education" class="footer__menu-link">Education</a></li>
+        <li><a href="#community" class="footer__menu-link">Community</a></li>
+        <li><a href="/preview.html" class="footer__menu-link">Preview</a></li>
+      </ul>
+    </div>
+    <div class="footer__link-wrapper">
+      <a href="#" class="footer__link">Privacy policy</a>
+      <a href="#" class="footer__link">Terms & Agreements</a>
+    </div>
+  </footer>
+  <script src="./script/mobile-menu.js"></script>
+  <script src="./script/submit-email.js"></script>
 </body>
 </html>

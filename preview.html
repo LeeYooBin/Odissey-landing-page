@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style/global.css">
+  <link rel="stylesheet" href="./style/header.css">
+  <link rel="stylesheet" href="./style/header-navbar.css">
+  <link rel="stylesheet" href="./style/title.css">
+  <link rel="stylesheet" href="./style/apod.css">
+  <link rel="stylesheet" href="./style/articles.css">
+  <link rel="stylesheet" href="./style/gallery.css">
+  <link rel="stylesheet" href="./style/footer.css">
+  <title>Preview</title>
+</head>
+<body>
+  <header class="header">
+    <nav class="header__navbar">
+      <a href="/">
+        <img 
+          src="./assets/Odyssey.svg" 
+          alt="Odyssey Logo"
+          class="header__logo-image"  
+        >
+      </a>
+      <div>
+        <button class="header__menu-icon">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </button>
+      </div>
+      <ul class="header__menu">
+        <li><a href="/" class="header__menu-link">Home</a></li>
+        <li><a href="#apod" class="header__menu-link">APOD</a></li>
+        <li><a href="#articles" class="header__menu-link">Articles</a></li>
+        <li><a href="#articles" class="header__menu-link">Gallery</a></li>
+        <li><a href="/login.html" class="header__menu-link">Sign in</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="apod">
+      <article class="apod__text-wrapper">
+        <h2 class="sub-title apod__title">Astronomy Picture of the Day</h2>
+        <p class="apod__data"></p>
+        <p class="apod__copyright"></p>
+        <p class="apod__description"></p>
+      </article>
+      <img class="apod__image" src="" alt="">
+    </section>
+    <section id="articles">
+      <h2 class="sub-title articles__title">Articles</h2>
+      <div class="article-wrapper"></div>
+    </section>
+    <section id="gallery">
+      <h2 class="sub-title gallery__title">Gallery</h2>
+      <div class="gallery__images-wrapper"></div>
+    </section>
+  </main>
+  <footer>
+    <a href="/"><img src="./assets/Odyssey.svg" alt="Odyssey Logo" class="footer__logo-image"></a>
+    <div>
+      <ul class="footer__menu">
+        <li><a href="/" class="footer__menu-link">Home</a></li>
+        <li><a href="#apod" class="footer__menu-link">APOD</a></li>
+        <li><a href="#articles" class="footer__menu-link">Articles</a></li>
+        <li><a href="#articles" class="footer__menu-link">Gallery</a></li>
+      </ul>
+    </div>
+    <div class="footer__link-wrapper">
+      <a href="#" class="footer__link">Privacy policy</a>
+      <a href="#" class="footer__link">Terms & Agreements</a>
+    </div>
+  </footer>
+  <script src="./script/mobile-menu.js"></script>
+  <script src="./script/apod.js"></script>
+  <script src="./script/articles.js"></script>
+  <script src="./script/images.js"></script>
+</body>
+</html>
